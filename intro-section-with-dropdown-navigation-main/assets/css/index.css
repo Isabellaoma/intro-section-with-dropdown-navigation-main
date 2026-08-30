@@ -2,15 +2,25 @@
     margin: 0;
     padding: 0;
 }
+main{
+width: 100%;
+}
 nav{
      padding: 30px 30px;
 }
 .class{
     display: flex;
     list-style: none;
-    gap: 50px;
-    margin-right: 500px;
+    gap: 20px;
+    margin-right: 550px;
+    margin-left: 30px;
+
 }
+.class1{
+        display: flex;
+        align-items: center;
+        gap:20px ;
+    }
 .class li a{
     display: flex;
     align-items: center;
@@ -27,8 +37,7 @@ nav{
 }
 .t{
     border: none;
-    height: 30px;
-    width: 40px;
+        width: 40px;
     background-color:transparent;
     padding: 0;
     font-size: 17px;
@@ -59,25 +68,322 @@ margin-bottom: 30px;
     padding-bottom: 30px;
     
 }
-.make{
-    margin-top: 70px;
-    margin-left: 170px;
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left:160px;
 }
+
 p{
     margin-bottom: 20px;
     font-size: 20px;
 }
-.pen{
-margin-left: 750px;
-margin-top:-350px;
-}
 .pen img{
-    height: 420px;
+    height: 400px;
     margin-left: 100px;
-}
+   }
 footer{
     margin-left: 150px;
     margin-top: -50px;
 }
 .d{margin-left: 20px;
+}
+
+
+
+@media screen and (min-width:280px) and (max-width:540px){
+main{
+    width: 100%;
+}
+nav{
+    /* margin-top: -15px; */
+}
+nav img{
+   width: 25px;
+}
+.logo img{
+    width: 150px;
+}
+li {
+    font-size: 2.0rem;
+}
+li img{
+
+}
+
+.class1 {
+flex-direction: column;
+align-items: flex-start;
+gap: 0.2rem;
+}
+.class{
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-left: 0px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4.0rem;
+    grid-auto-flow: dense;
+      
+    }
+    .make{
+grid-row: 2;
+margin-left: -140px;
+    }
+    
+        .b {
+        width: 95%;
+        font-size: 2.0rem;
+        padding:10px 15px;
+        border-radius: 12px;
+       
+    }
+    .t{
+        font-size: 2.0rem;
+        width: 95%;
+        padding: 10px 15px;
+              
+    }
+    .button, .register{
+        margin-left:-10px;
+    }
+    
+       .make h1{
+font-size:3.0rem ;
+    }
+    .make p{
+        font-size: 2.5rem;
+        text-align: center;
+            }
+    .pen img{
+margin-top: 20px;
+width: 715px;
+height: 550px;
+margin-left: -160px;
+overflow: hidden;
+}
+.more{
+   margin-left:250px; 
+     font-size: 0.8rem;
+     
+}
+ .h button{
+             font-size:1.5rem;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       height: auto;
+       border-radius: 12px;
+    }
+   
+    footer{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+   
+}
+
+
+@media screen and (min-width:541px) and (max-width:890px){
+
+main{
+    width: 80%;
+}
+nav{
+    /* margin-top: -15px; */
+}
+nav img{
+   
+}
+.logo img{
+    width: 200px;
+}
+li {
+    font-size: 2.2rem;
+}
+
+
+.class1 {
+flex-direction: column;
+align-items: flex-start;
+gap: 0.5rem;
+}
+.class{
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-left: 0px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4.0rem;
+    grid-auto-flow: dense;
+      
+    }
+    .make{
+grid-row: 2;
+margin-left: -140px;
+    }
+    
+        .b {
+        width: 95%;
+        font-size: 2.2rem;
+        padding:10px 15px;
+        border-radius: 15px;
+       
+    }
+    .t{
+        font-size: 2.0rem;
+        width: 95%;
+        padding: 10px 15px;
+              
+    }
+    .button, .register{
+        margin-left:-10px;
+    }
+    
+       .make h1{
+font-size:3.5rem ;
+    }
+    .make p{
+        font-size: 2.5rem;
+        text-align: center;
+            }
+    .pen img{
+margin-top: 30px;
+width: 770px;
+height: 550px;
+margin-left: -160px;
+overflow: hidden;
+}
+.more{
+   margin-left:250px; 
+   padding: 20px auto;
+   font-size: 0.8rem;
+   height: 50%;
+   
+}
+    footer{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .h button{
+             font-size:1.8rem;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       height: auto;
+       border-radius: 15px;
+    }
+   
+
+
+
+
+
+}
+
+@media screen and (min-width:891px) and (max-width:1024px){
+    
+main{
+    width: 80%;
+}
+nav{
+    /* margin-top: -15px; */
+}
+.logo img{
+    width: 200px;
+}
+nav img{
+   width: 30px;
+}
+li {
+    font-size: 2.5rem;
+}
+
+
+.class1 {
+flex-direction: column;
+align-items: flex-start;
+gap: 0.8rem;
+}
+.class{
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-left: 0px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4.2rem;
+    grid-auto-flow: dense;
+      
+    }
+    .make{
+grid-row: 2;
+margin-left: -140px;
+    }
+    
+        .b {
+        width: 95%;
+        font-size: 2.5rem;
+        padding:10px 15px;
+        border-radius: 15px;
+       
+    }
+    .t{
+        font-size: 2.5rem;
+        width: 95%;
+        padding: 10px 15px;
+              
+    }
+    .button, .register{
+        margin-left:-10px;
+    }
+    
+       .make h1{
+font-size:3.8rem ;
+    }
+    .make p{
+        font-size: 2.5rem;
+        text-align: center;
+            }
+    .pen img{
+margin-top: 40px;
+width: 1025px;
+height: 800px;
+margin-left: -160px;
+overflow: hidden;
+}
+.more{
+   margin-left:250px; 
+   padding: 20px auto;
+   font-size: 0.8rem;
+   height: 50%;
+   
+}
+    footer{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .h button{
+             font-size:1.8rem;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       height: auto;
+       border-radius: 15px;
+    }
+   
+
+
+
+
+
+
 }
